@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(177, 200, 235);
+}
+
+h1 a{
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    background-color: darksalmon;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    position: relative;
+    padding: 0px 50px;
+    box-shadow: 0 2px 3px rgb(0, 0, 0, 0.5);
+}
