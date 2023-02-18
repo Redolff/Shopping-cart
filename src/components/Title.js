@@ -3,8 +3,8 @@ import { Component } from 'react'
 class Title extends Component {
     render(){
         return (
-            <div className='container'>
-                <h1> <a href='http://localhost:3000/'> Todo autos </a>  </h1>
+            <div className='container text-center'>
+                <h1> Remeras Shop </h1>
             </div>
         )
     }
