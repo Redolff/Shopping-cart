@@ -1,0 +1,23 @@
+.detalles{
+    background-color: yellow;
+    position: absolute;
+    margin-top: 30;
+    box-shadow: 1px 5px 5px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 300px;
+    right: 0;
+}
+
+.carro-prod{
+    margin: 0;
+    padding: 0;
+}
+
+.prod{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: solid 1px #aaa;
+}

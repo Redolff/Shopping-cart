@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import BubbleAlert from '../components/BubbleAlert'
+import DetallesCarro from '../components/DetallesCarro'
 import '../styles/Carro.css';
 
 class Carro extends Component {
@@ -17,6 +18,7 @@ class Carro extends Component {
                 <button type="button" className="btn btn-info">
                     <iconify-icon icon="ic:round-add-shopping-cart"></iconify-icon>
                 </button>
+                <DetallesCarro carro={carro} />
             </div>
         )
     }

@@ -4,7 +4,7 @@ import Logo from './Logo'
 
 class NavBar extends Component {
     render(){
-        const { carro } = this.props;
+        const { carro, carroVisible } = this.props;
         return (
             <nav>
                 <Logo />
