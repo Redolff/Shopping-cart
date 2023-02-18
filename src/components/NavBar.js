@@ -4,11 +4,15 @@ import Logo from './Logo'
 
 class NavBar extends Component {
     render(){
-        const { carro, carroVisible } = this.props;
+        const { carro, carroVisible, mostrarCarro } = this.props;
         return (
             <nav>
                 <Logo />
-                <Carro carro={carro} />
+                <Carro 
+                    carro={carro}  
+                    carroVisible={carroVisible}
+                    mostrarCarro={mostrarCarro}
+                />
             </nav>
         )
     }

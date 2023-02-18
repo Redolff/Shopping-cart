@@ -10,15 +10,15 @@ class App extends Component {
 
   state = {
     productos: [
-      {id: 1, name: 'Ferrari', price: '$580.000', img: '/imagenes/ferrari.jpg' },
-      {id: 2, name: 'Lamborghini', price: '$24500', img: '/imagenes/lamborghini.jpg' },
-      {id: 3, name: 'Corsa', price: '1.539.900', img: '/imagenes/corsa.jpg' },
-      {id: 4, name: 'Peugeot 206', price: '1690.000', img: '/imagenes/peugeot206.jpg' },
-      {id: 5, name: 'Toyota Corolla', price: '7.200.000', img: '/imagenes/toyotacorolla.jpg' },
-      {id: 6, name: 'Audi TT', price: '$73.000', img: '/imagenes/auditt.jpg' },
-      {id: 7, name: 'Vento', price: '12.100.000', img: '/imagenes/vento.jpg' },
-      {id: 8, name: 'Bora', price: '$14.900', img: '/imagenes/bora.jpg' },
-      {id: 9, name: 'Mercedes Benz', price: '$46.000', img: '/imagenes/mercedesbenz.jpg' },
+      {id: 1, name: 'River', price: '14999.00', img: '/imagenes/river.jpg' },
+      {id: 2, name: 'Boca', price: '14999.00', img: '/imagenes/boca.jpg' },
+      {id: 3, name: 'Independiente', price: '12999.00', img: '/imagenes/independiente.jpg' },
+      {id: 4, name: 'Racing', price: '12999.00', img: '/imagenes/racing.jpg' },
+      {id: 5, name: 'San Lorenzo', price: '10000.00', img: '/imagenes/sanlorenzo.jpg' },
+      {id: 6, name: 'Velez', price: '$9000.00', img: '/imagenes/velez.jpg' },
+      {id: 7, name: 'Lanus', price: '9000.00', img: '/imagenes/lanus.jpg' },
+      {id: 8, name: 'Estudiantes', price: '9000.00', img: '/imagenes/estudiantes.jpg' },
+      {id: 9, name: 'Gimnasia de la Plata', price: '6000.00', img: '/imagenes/gimnasia.jpg' },
     ],
     carro: [],
     carroVisible: false,
@@ -42,13 +42,17 @@ class App extends Component {
   }
 
   mostrarCarro = () => {
-    return !this.state.carroVisible
+    if(!this.state.carro.length){
+      return 
+    }
+    this.setState({ carroVisible: !this.state.carroVisible })
   }
 
   render(){  
+    const { carroVisible } = this.state
     return (
       <div>
-        <NavBar carro={this.state.carro} carroVisible={this.state.carroVisible} />
+        <NavBar carro={this.state.carro} carroVisible={carroVisible} mostrarCarro={this.mostrarCarro} />
         <Title />
         <div className="container text-center">
           <Productos 

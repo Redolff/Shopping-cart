@@ -7,7 +7,7 @@ class Producto extends Component {
         const { producto, agregarAlCarro } = this.props;
         return (
             <div className="col producto">
-                <img alt={producto.name} src={producto.img} />
+                <img alt={producto.name} src={producto.img} width='300px' height='300px'/>
                 <h3> {producto.name} </h3>
                 <p> ${producto.price} </p>
                 <Button onClick={() => agregarAlCarro(producto)}>
