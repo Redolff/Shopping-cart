@@ -18,7 +18,11 @@ class Carro extends Component {
                 <button onClick={mostrarCarro} type="button" className="btn btn-info">
                     <iconify-icon icon="ic:round-add-shopping-cart"></iconify-icon>
                 </button>
-                {carroVisible ? <DetallesCarro carro={carro}/> : null}
+                {carroVisible ? 
+                    <DetallesCarro 
+                        carro={carro}
+                    />
+                : null}
             </div>
         )
     }

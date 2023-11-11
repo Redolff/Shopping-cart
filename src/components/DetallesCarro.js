@@ -11,7 +11,8 @@ class DetallesCarro extends Component {
                     <li className='prod' key={x.id}> 
                         <img alt={x.name} src={x.img} width='50' height='40' />
                         {x.name} <span> {x.cantidad} </span> 
-                    </li>)}
+                    </li>
+                    )}
                 </ul>
             </div>
         )
